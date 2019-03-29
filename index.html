@@ -4,9 +4,45 @@
 	<title>EmailFormToAE</title>
 </head>
 <body>
-<?php 
-	$x = 10;
-	echo "<h1>Hello World this is a test number $x</h1>";
-?>
+
+	<form action="sendemail.php">
+		<!--Textfield-->
+		<p><input name="text" value="z.B. 10" size="40"> Texteingabe</p>
+		<!--Textarea-->
+		<p><textarea name="textarea" id="" cols="30" rows="10">Hello World</textarea> Textfeld</p>
+		<!--Password-->
+		<p><input type="password" name="pw" maxlength="6"> Passwort</p>
+		<!--Radiobuttons-->
+		<p>
+			<input type="radio" name="radio1" value="Eins" checked="true">
+			<input type="radio" name="radio1" value="Zwei">
+			<input type="radio" name="radio1" value="Drei"> Radio Buttons
+		</p>
+		<!--Dropdown-->
+		<p>
+			<select name="dropdown">
+				<option value="Wert1" selected="selected"> Wahl 1 </option>
+				<option value="Wert2"> Wahl 2 </option>
+				<option value="Wert3"> Wahl 3 </option>
+			</select>
+		</p>
+		<!--Select multiple-->
+		<p>
+			<select multiple="multiple" name="list[]">
+				<option value="Wert1" selected="selected"> Wahl 1 </option>
+				<option value="Wert2" selected="selected"> Wahl 2 </option>
+				<option value="Wert3"> Wahl 3 </option>
+			</select>
+		</p>
+		<!--Checkboxes-->
+		<p>
+			<input type="checkbox" value="Value1" name="checkbox1" checked="checked">
+			<input type="checkbox" value="Value2" name="checkbox2">
+			<input type="checkbox" value="Value3" name="checkbox3"> Checkboxen
+		</p>
+ 
+
+		<p><input type="submit"><input type="reset"></p>
+	</form>
 </body>
 </html>
