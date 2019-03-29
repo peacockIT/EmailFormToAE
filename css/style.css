@@ -1,12 +1,14 @@
 
-body{
-	width:900px;
-	align-content: center;
-<<<<<<< HEAD
-	background-color: #cc3422;
-	color: #fff;
+html, body {
+    height: 100%;
 }
-=======
-	background-color: #cccc22;
+
+html {
+    display: table;
+    margin: auto;
 }
->>>>>>> 2bbb2cf2c8680f31bab8385cba34e836eadcccde
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
