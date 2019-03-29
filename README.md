@@ -1,2 +1,20 @@
-# Email-Form-to-AE
+# Email Form to AE
 A complex html input form with all kinds of input elements that are validated and can be sent to an email address as an base64 encoded string.
+
+Der Redakteur öffnet die Passwort gesicherte Website und gibt sein Passwort ein. (z.B. grafikbestellung.radiobremen.de)
+
+Eine Seite mit einem Formular öffnet sich zur Eingabe aller Wetter-Daten (Textfelder, Radio-Buttons, Checkboxes, Dropdown-Listen)
+
+Sind alle Daten eingetragen wird der Senden-Button geklickt und die Daten werden geprüft.
+
+Sind die Daten unvollständig oder nicht korrekt wird der Fehler im Formular angezeigt mit der bitte die Eingabe zu korrigieren.
+
+Sind die Daten vollständig und richtig werden die Daten in einem String zusammengefügt, als einzelne Zeichenkette encoded (base64_encode()) und per Email an die Grafik Email-Adresse gesendet.
+
+Die Grafik öffnet das After Effects Wetter-Template zusammen mit dem neuen Wetter-Skript welches lediglich ein Text-Eingabefeld und einen Anwenden-Button besitzt.
+
+Die einzelne Zeichenkette aus der Email wird kopiert und in das Eingabefeld des After Effects Skripts eingefügt.
+
+Durch Klicken des Anwenden-Buttons werden automatisch alle Daten in das Wetter-Template übertragen. (Hierzu müsste das Wetter-Template etwas angepasst werden)
+
+Nun müssen nur noch die Kompositionen gerendert werden.
